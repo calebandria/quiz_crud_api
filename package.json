@@ -4,10 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mysql",
+    "api",
+    "restfulapi",
+    "javascript",
+    "es6"
+  ],
+  "author": "calebandria",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
@@ -16,5 +25,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebandria/quiz_crud_api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/calebandria/quiz_crud_api/issues"
+  },
+  "homepage": "https://github.com/calebandria/quiz_crud_api#readme"
 }
