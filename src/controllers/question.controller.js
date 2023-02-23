@@ -16,7 +16,7 @@ const QuestionModel = require('../models/question.model');
                 res.send(err);
             res.json({
                 error:false,
-                message:"Employee added successfully!",
+                message:"Question added successfully!",
                 data: quest
             });
         })
