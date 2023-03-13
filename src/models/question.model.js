@@ -71,16 +71,3 @@ QuestionModel.findAll = function(result) {
     })
 }
 module.exports = QuestionModel;
-
-  /*   findAll(result){
-        dbConn.query("SELECT * FROM question", (err, res) =>{
-            if(err){
-                console.log("error: ",err);
-                result(null,err);
-            }
-            else{
-                console.log("employees:", res);
-                result(null, res);
-            }
-        })
-    } */
