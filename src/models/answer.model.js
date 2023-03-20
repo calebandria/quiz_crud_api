@@ -7,4 +7,4 @@ function AnswerModel(answer){
     this.id_question = answer.id_question;
 }
 
-
+module.exports = AnswerModel;

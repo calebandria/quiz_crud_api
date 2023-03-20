@@ -8,7 +8,7 @@ const questionController = require('../controllers/question.controller.js');
 router.post('/question/post', questionController.create);
 router.delete('/question/:id/delete', questionController.delete);
 router.put('/question/:id/put', questionController.update);
-router.get('/question/:id/get',questionController.find);
+router.get('/question/:id/get', questionController.find);
 router.get('/question/get', questionController.findAll);
 
 module.exports = router;

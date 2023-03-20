@@ -8,7 +8,7 @@ function QuestionModel(question) {
 QuestionModel.create = function(newQuest, result) {
         dbConn.query("INSERT INTO question SET ? ", newQuest, (err, res) => {
             if(err) {
-                console.log("erro:",err);
+                console.log("error:",err);
                 result(err,null);
             }
             else{
@@ -59,13 +59,13 @@ QuestionModel.find = function(id, result) {
 }
 
 QuestionModel.findAll = function(result) {
-    dbConn.query("SELECT * FROM question", (err,res) =>{
+    dbConn.query("SELECT question.id_question, question.content, theme.label from question inner join theme on question.id_theme = theme.id_theme;", (err,res) =>{
         if(err){
             console.log("error:", err);
             result(err, null);
         }
         else{
-            console.log("All the data is shown now!");
+            console.log("Questions are shown");
             result(null, res);
         }
     })
