@@ -25,7 +25,7 @@ QuestionModel.delete = function(id,result) {
             result(err,null);
         }
         else{
-            console.log("Deletion done!");
+            console.log("Deletion question done!");
             result(null, res);
         }
     })
