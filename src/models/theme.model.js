@@ -31,7 +31,7 @@ ThemeModel.findAll = function(result){
     })
 }
 ThemeModel.delete = function(id, result){
-    dbConn.query("DELETE FROM theme WHERE id_theme=?", id, (err, res)=>{
+    dbConn.query("DELETE FROM theme WHERE id_theme=?", [id], (err, res)=>{
         if(err){
             console.log("error:", err);
             result(err, null);
